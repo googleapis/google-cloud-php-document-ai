@@ -26,9 +26,9 @@ class Entity extends \Google\Protobuf\Internal\Message
      */
     protected $text_anchor = null;
     /**
-     * Entity type from a schema e.g. `Address`.
+     * Required. Entity type from a schema e.g. `Address`.
      *
-     * Generated from protobuf field <code>string type = 2;</code>
+     * Generated from protobuf field <code>string type = 2 [(.google.api.field_behavior) = REQUIRED];</code>
      */
     protected $type = '';
     /**
@@ -105,7 +105,7 @@ class Entity extends \Google\Protobuf\Internal\Message
      *           Text anchor indexing into the
      *           [Document.text][google.cloud.documentai.v1.Document.text].
      *     @type string $type
-     *           Entity type from a schema e.g. `Address`.
+     *           Required. Entity type from a schema e.g. `Address`.
      *     @type string $mention_text
      *           Optional. Text value in the document e.g. `1600 Amphitheatre Pkwy`. If
      *           the entity is not present in the document, this field will be empty.
@@ -180,9 +180,9 @@ class Entity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Entity type from a schema e.g. `Address`.
+     * Required. Entity type from a schema e.g. `Address`.
      *
-     * Generated from protobuf field <code>string type = 2;</code>
+     * Generated from protobuf field <code>string type = 2 [(.google.api.field_behavior) = REQUIRED];</code>
      * @return string
      */
     public function getType()
@@ -191,9 +191,9 @@ class Entity extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Entity type from a schema e.g. `Address`.
+     * Required. Entity type from a schema e.g. `Address`.
      *
-     * Generated from protobuf field <code>string type = 2;</code>
+     * Generated from protobuf field <code>string type = 2 [(.google.api.field_behavior) = REQUIRED];</code>
      * @param string $var
      * @return $this
      */
